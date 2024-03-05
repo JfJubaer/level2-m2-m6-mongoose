@@ -7,9 +7,8 @@ main().catch((err) => console.log(err));
 
 async function main() {
   try {
-    await mongoose.connect("mongodb://localhost:27017");
+    await mongoose.connect("mongodb://localhost:27017/newHere");
     console.log(`🛢 Database connection successful`);
-
     app.listen(port, () => {
       console.log(`Server is  listening on port ${port}`);
     });
